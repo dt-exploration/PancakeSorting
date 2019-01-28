@@ -17,25 +17,28 @@ function flip($niz,$first_el)
 }
 
 //sortiranje
-
+//6 1 8 2 9 4
 $k=1;
-for($i=count(niz)-$k; $i==0; $k++){
+echo "Ok";
+for ( $i=count($nizz)-$k; $i!=0; $k++) {
 
-  $max=$niz[$i];
+    $max=$nizz[0];
+    $index=0;
 
-for($j=$i-1; $j>) {
+    for ($j=1; $j<$i+1; $j++) {
 
-if( $niz[$j] > $max){
-    $index=$j;
+        if ( $nizz[$j] > $max){
+            $index=$j;
+        }
+    }
+
+flip($nizz,$index+1);
+flip($nizz,$i+1);
+
 }
-}
 
-flip
-flip
-
-}
-
-foreach ($d as $variable) {
+echo "Sorted array: <br>";
+foreach ($nizz as $variable) {
     echo $variable."    ";
 }
 
