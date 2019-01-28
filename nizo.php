@@ -44,5 +44,5 @@ echo "Sorted array: <br>";
 foreach ($nizz as $variable) {
     echo $variable."    ";
 }
-
+//kraj fajla 
 ?>
