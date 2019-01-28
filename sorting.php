@@ -33,7 +33,6 @@ for ( $i=count($nizz)-$k; $i>=0; $i--) {
     }
 
     $nizz=flip($nizz, $index+1);
-    echo $index."<br>";
     $nizz=flip($nizz, $i+1);
     $k++;
 }
