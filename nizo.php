@@ -35,7 +35,10 @@ if($niz[$j]>$max){
 }
 
 
-dafdf
+2
+
+
+gggi
 
 }
 
