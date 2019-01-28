@@ -16,32 +16,27 @@ function flip($niz,$first_el)
     return $niz;
 }
 
-$d=flip($nizz,8);
+//sortiranje
+
+$k=1;
+for($i=count(niz)-$k; $i==0; $k++){
+
+  $max=$niz[$i];
+
+for($j=$i-1; $j>) {
+
+if( $niz[$j] > $max){
+    $index=$j;
+}
+}
+
+flip
+flip
+
+}
 
 foreach ($d as $variable) {
     echo $variable."    ";
 }
-
-//sortiranje
-
-for($i=count(niz)-1; $i>0; $i--){
-
-  $max=$niz[$i];
-
-for()
-
-if($niz[$j]>$max){
-  $max=$niz[$j];
-}
-
-
-2
-
-
-gggi
-
-}
-
-
 
 ?>
