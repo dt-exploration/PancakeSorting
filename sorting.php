@@ -2,7 +2,7 @@
 
 $nizz=array(5,6,2,8,1,3,8,9,5,3,4,6,4,2,8,9,6,4);
 
-function flip($niz,$first_el)
+function flip($niz, $first_el)
 {
 
     for( $i=0; $i<$first_el/2; $i++) {
@@ -17,16 +17,14 @@ function flip($niz,$first_el)
 }
 
 //sortiranje
-//6 1 8 2 9 4
 $k=1;
-
 for ( $i=count($nizz)-$k; $i>=0; $i--) {
 
     $max=$nizz[0];
     $index=0;
 
     for ($j=1; $j<$i+1; $j++) {
-//echo " $j ";
+
         if ( $nizz[$j] > $max){
             $max=$nizz[$j];
             $index=$j;
@@ -34,15 +32,15 @@ for ( $i=count($nizz)-$k; $i>=0; $i--) {
 
     }
 
-$nizz=flip($nizz,$index+1);
-echo $index."<br>";
-$nizz=flip($nizz,$i+1);
-$k++;
+    $nizz=flip($nizz, $index+1);
+    echo $index."<br>";
+    $nizz=flip($nizz, $i+1);
+    $k++;
 }
 
 echo "Sorted array: <br>";
 foreach ($nizz as $variable) {
     echo $variable."    ";
 }
-//kraj fajla 
+
 ?>
