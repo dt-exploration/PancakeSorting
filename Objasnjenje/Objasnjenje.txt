@@ -1,0 +1,2 @@
+Sortiranje pancake metodom. Komleksnost: log (n).
+Koristi se iskljucivo metoda flip.
