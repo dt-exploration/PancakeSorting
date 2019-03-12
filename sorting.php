@@ -7,9 +7,9 @@ function flip($niz, $first_el)
 
     for($i=0; $i<$first_el/2; $i++) {
 
-    $help=$niz[$i];
-    $niz[$i]=$niz[$first_el-($i+1)];
-    $niz[$first_el-($i+1)]=$help;
+    $help = $niz[$i];
+    $niz[$i] = $niz[$first_el-($i+1)];
+    $niz[$first_el-($i+1)] = $help;
 
     }
 
@@ -17,17 +17,17 @@ function flip($niz, $first_el)
 }
 
 //sortiranje
-$k=1;
-for ($i=count($nizz)-$k; $i>=0; $i--) {
+$k = 1;
+for ($i = count($nizz)-$k; $i >= 0; $i--) {
 
-    $max=$nizz[0];
-    $index=0;
+    $max = $nizz[0];
+    $index = 0;
 
-    for ($j=1; $j<$i+1; $j++) {
+    for ($j = 1; $j < $i+1; $j++) {
 
-        if ( $nizz[$j] > $max){
-            $max=$nizz[$j];
-            $index=$j;
+        if ($nizz[$j] > $max){
+            $max = $nizz[$j];
+            $index = $j;
         }
 
     }
