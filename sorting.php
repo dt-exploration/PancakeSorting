@@ -32,8 +32,8 @@ for ($i = count($nizz)-$k; $i >= 0; $i--) {
 
     }
 
-    $nizz=flip($nizz, $index+1);
-    $nizz=flip($nizz, $i+1);
+    $nizz = flip($nizz, $index+1);
+    $nizz = flip($nizz, $i+1);
     $k++;
 }
 
